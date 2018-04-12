@@ -12,7 +12,7 @@ import DevTools from '../containers/Root/DevTools';
 export default function configureStore(initialState, history) {
     const logger = createLogger();
 
-    // Build the middleware for intercepting and dispatching navigation actions
+    // []Build the middleware for intercepting and dispatching navigation actions
     const reduxRouterMiddleware = routerMiddleware(history);
 
     const middleware = applyMiddleware(thunk, logger, reduxRouterMiddleware);
